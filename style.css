@@ -1,5 +1,11 @@
-.image-with-tips {
+.image-with-tips-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#image-with-tips {
     width: 1000px;
+    position: relative;
 }
 .tip {
     position: relative;

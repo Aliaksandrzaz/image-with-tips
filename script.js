@@ -112,7 +112,6 @@ function updateImagePosition() {
 }
 
 function hoverService(id) {
-    console.log(id);
     const elements = main.querySelectorAll(`[data-id='${id}']`);
     elements.forEach((el) => {
         el.classList.toggle('highlight-tip')
