@@ -1,0 +1,34 @@
+{
+  "displayType": "2",
+  "image": {
+    "x": 85,
+    "y": 30
+  },
+  "previousPart": "configs/main.json",
+  "tips": [{
+    "point": {
+      "x": 208,
+      "y": 222
+    },
+    "description": {
+      "x": 512,
+      "y": 523,
+      "label": "Описание для лица"
+    },
+    "nextPart": "configs/eye.json",
+    "id": 2
+  },
+    {
+      "point": {
+        "x": 408,
+        "y": 322
+      },
+      "description": {
+        "x": 412,
+        "y": 423,
+        "label": "Описание для лица 2"
+      },
+      "nextPart": "",
+      "id": 3
+    }]
+}

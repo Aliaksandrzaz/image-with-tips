@@ -1,0 +1,39 @@
+.image-with-tips {
+    width: 1000px;
+}
+.tip {
+    position: relative;
+    background: yellow;
+    width: 12px;
+    height: 12px;
+    z-index: 100;
+}
+
+.description {
+    position: relative;
+}
+
+#background-for-tips {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-with-tips-back-btn-wrapper {
+    position: relative;
+    z-index: 100;
+}
+
+.hidden {
+    display: none!important;
+}
+
+#image-with-tips-position {
+    position: absolute;
+    width: 300px;
+}
+
+.highlight-tip {
+    color: red;
+    box-shadow: 2px 2px black;
+}

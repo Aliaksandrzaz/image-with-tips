@@ -1,0 +1,21 @@
+{
+  "displayType": "3",
+  "image": {
+    "x": 15,
+    "y": 30
+  },
+  "previousPart": "configs/face.json",
+  "tips": [{
+    "point": {
+      "x": 308,
+      "y": 322
+    },
+    "description": {
+      "x": 312,
+      "y": 323,
+      "label": "Глаза"
+    },
+    "nextPart": "",
+    "id": 1
+  }]
+}

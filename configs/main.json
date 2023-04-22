@@ -1,0 +1,21 @@
+{
+  "displayType": "1",
+  "image": {
+    "x": 15,
+    "y": 30
+  },
+  "previousPart": "",
+  "tips": [{
+    "point": {
+     "x": 308,
+     "y": 322
+    },
+    "description": {
+      "x": 112,
+      "y": 123,
+      "label": "Описание процедуры"
+    },
+    "nextPart": "configs/face.json",
+    "id": 1
+  }]
+}
