@@ -1,0 +1,7 @@
+{
+  "name": "image-with-tips",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "types": "global.d.ts"
+}

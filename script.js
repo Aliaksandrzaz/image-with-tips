@@ -1,30 +1,8 @@
-function printMousePos(event) {
+document.addEventListener('click', (event) => {
     console.log('clientX: ' + event.clientX + ' - clientY: ' + event.clientY);
-}
+});
 
-document.addEventListener('click', printMousePos);
-
-let config = {
-    displayType: '',
-    image: {
-        x: 0,
-        y: 0
-    },
-    previousPart: '',
-    tips: [{
-        point: {
-            x: 0,
-            y: 0,
-        },
-        description: {
-            x: 0,
-            y: 0,
-            label: ''
-        },
-        nextPart: '',
-        id: 1,
-    }]
-};
+let config = {};
 
 function createTip(tip) {
     const tipEl = document.createElement('div');
