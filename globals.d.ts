@@ -10,10 +10,10 @@ interface IConfig {
             x: number,
             y: number,
         },
-        description: {
+        description?: {
             x: number,
             y: number,
-            label: string
+            label: string,
         },
         nextPart: string,
         id: number,
@@ -21,6 +21,10 @@ interface IConfig {
     order?: {
         x: number,
         y: number
+    },
+    detailDescription?: {
+        label: string,
+        title: string
     }
 }
 

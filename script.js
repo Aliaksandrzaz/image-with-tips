@@ -63,6 +63,7 @@ function createTips(configPath) {
         updateOrderVisibility();
         updateImagePosition();
         updateMainInfoVisibility();
+        updateDetailDescription(value);
     })
 }
 
@@ -101,6 +102,16 @@ function updateImagePosition() {
     backgroundForTipsPosition.style.left = `${config.image.x}px`;
 }
 
+function updateDetailDescription(value) {
+    if (config.displayType === '3') {
+        detailDescription.classList.remove('hidden');
+        detailDescription.querySelector('h3').textContent = value.detailDescription.title;
+        detailDescription.querySelector('p').textContent = value.detailDescription.label;
+    } else {
+        detailDescription.classList.add('hidden');
+    }
+}
+
 function hoverService(id) {
     const elements = main.querySelectorAll(`[data-id='${id}']`);
     elements.forEach((el) => {
@@ -114,6 +125,8 @@ const backgroundForTipsBackBtn = document.getElementById('image-with-tips-back-b
 const backgroundForTipsPosition = document.getElementById('image-with-tips-position');
 const backgroundForTipsOrder = document.getElementById('image-with-tips-order');
 const mainInfo = main.querySelector('.main-info');
+const detailDescription = main.querySelector('.detail-description');
+
 
 createTips('configs/main.json');
 

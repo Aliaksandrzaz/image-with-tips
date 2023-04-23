@@ -11,11 +11,6 @@
         "x": 645,
         "y": 108
       },
-      "description": {
-        "x": 421,
-        "y": 106,
-        "label": "Глаза"
-      },
       "nextPart": "",
       "id": 1
     }
@@ -23,5 +18,9 @@
   "order": {
     "x": 421,
     "y": 126
+  },
+  "detailDescription": {
+    "label": "Глаза",
+    "title": "Заголовок"
   }
 }
