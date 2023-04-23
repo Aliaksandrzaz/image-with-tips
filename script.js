@@ -1,7 +1,3 @@
-document.addEventListener('click', (event) => {
-    console.log('clientX: ' + event.clientX + ' - clientY: ' + event.clientY);
-});
-
 let config = {};
 
 function createTip(tip) {
@@ -49,16 +45,24 @@ function createTips(configPath) {
         const fragment = document.createDocumentFragment();
         value.tips.forEach((tip) => {
             const tipEl = createTip(tip);
-            const descriptionEl = createDescription(tip);
-
             fragment.append(tipEl);
-            fragment.append(descriptionEl);
+
+            if (tip.description) {
+                const descriptionEl = createDescription(tip);
+                fragment.append(descriptionEl);
+            }
         })
+
+        if (config?.order) {
+            backgroundForTipsOrder.style.top = `${config.order.y}px`;
+            backgroundForTipsOrder.style.left = `${config.order.x}px`;
+        }
 
         backgroundForTips.append(fragment);
         updateBackBtnVisibility();
         updateOrderVisibility();
         updateImagePosition();
+        updateMainInfoVisibility();
     })
 }
 
@@ -84,6 +88,14 @@ function updateOrderVisibility() {
     }
 }
 
+function updateMainInfoVisibility() {
+    if (config.displayType === '1') {
+        mainInfo.classList.remove('hidden');
+    } else {
+        mainInfo.classList.add('hidden');
+    }
+}
+
 function updateImagePosition() {
     backgroundForTipsPosition.style.top = `${config.image.y}px`;
     backgroundForTipsPosition.style.left = `${config.image.x}px`;
@@ -101,6 +113,7 @@ const backgroundForTips = document.getElementById('background-for-tips');
 const backgroundForTipsBackBtn = document.getElementById('image-with-tips-back-btn');
 const backgroundForTipsPosition = document.getElementById('image-with-tips-position');
 const backgroundForTipsOrder = document.getElementById('image-with-tips-order');
+const mainInfo = main.querySelector('.main-info');
 
 createTips('configs/main.json');
 
@@ -117,3 +130,10 @@ main.addEventListener('click', (event) => {
         createTips(event.target.dataset.nextPart);
     }
 })
+
+document.addEventListener('click', (event) => {
+    const {x, y} = main.getBoundingClientRect();
+    const posX = event.clientX - x;
+    const posY = event.clientY - y;
+    console.log('clientX: ' + posX + ' - clientY: ' + posY);
+});

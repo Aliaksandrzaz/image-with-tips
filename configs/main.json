@@ -1,21 +1,37 @@
 {
   "displayType": "1",
   "image": {
-    "x": 15,
-    "y": 30
+    "x": 0,
+    "y": 0
   },
   "previousPart": "",
-  "tips": [{
-    "point": {
-     "x": 308,
-     "y": 322
+  "tips": [
+    {
+      "point": {
+        "x": 660,
+        "y": 102
+      },
+      "description": null,
+      "nextPart": "configs/face.json",
+      "id": 1
     },
-    "description": {
-      "x": 112,
-      "y": 123,
-      "label": "Описание процедуры"
+    {
+      "point": {
+        "x": 580,
+        "y": 402
+      },
+      "description": null,
+      "nextPart": "configs/arm.json",
+      "id": 2
     },
-    "nextPart": "configs/face.json",
-    "id": 1
-  }]
+    {
+      "point": {
+        "x": 630,
+        "y": 552
+      },
+      "description": null,
+      "nextPart": "configs/leg.json",
+      "id": 3
+    }
+  ]
 }

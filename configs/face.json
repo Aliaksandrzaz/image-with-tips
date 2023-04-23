@@ -1,34 +1,36 @@
 {
   "displayType": "2",
   "image": {
-    "x": 85,
-    "y": 30
+    "x": -155,
+    "y": 0
   },
   "previousPart": "configs/main.json",
-  "tips": [{
-    "point": {
-      "x": 208,
-      "y": 222
-    },
-    "description": {
-      "x": 512,
-      "y": 523,
-      "label": "Описание для лица"
-    },
-    "nextPart": "configs/eye.json",
-    "id": 2
-  },
+  "tips": [
     {
       "point": {
-        "x": 408,
-        "y": 322
+        "x": 510,
+        "y": 112
       },
       "description": {
-        "x": 412,
-        "y": 423,
+        "x": 275,
+        "y": 112,
+        "label": "Описание для лица"
+      },
+      "nextPart": "configs/eye.json",
+      "id": 1
+    },
+    {
+      "point": {
+        "x": 500,
+        "y": 162
+      },
+      "description": {
+        "x": 339,
+        "y": 173,
         "label": "Описание для лица 2"
       },
       "nextPart": "",
-      "id": 3
-    }]
+      "id": 2
+    }
+  ]
 }

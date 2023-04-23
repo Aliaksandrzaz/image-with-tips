@@ -17,7 +17,11 @@ interface IConfig {
         },
         nextPart: string,
         id: number,
-    }[]
+    }[],
+    order?: {
+        x: number,
+        y: number
+    }
 }
 
 declare var config: IConfig;

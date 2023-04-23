@@ -1,21 +1,27 @@
 {
   "displayType": "3",
   "image": {
-    "x": 15,
-    "y": 30
+    "x": 0,
+    "y": 0
   },
   "previousPart": "configs/face.json",
-  "tips": [{
-    "point": {
-      "x": 308,
-      "y": 322
-    },
-    "description": {
-      "x": 312,
-      "y": 323,
-      "label": "Глаза"
-    },
-    "nextPart": "",
-    "id": 1
-  }]
+  "tips": [
+    {
+      "point": {
+        "x": 645,
+        "y": 108
+      },
+      "description": {
+        "x": 421,
+        "y": 106,
+        "label": "Глаза"
+      },
+      "nextPart": "",
+      "id": 1
+    }
+  ],
+  "order": {
+    "x": 421,
+    "y": 126
+  }
 }

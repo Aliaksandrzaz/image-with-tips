@@ -8,15 +8,17 @@
     position: relative;
 }
 .tip {
-    position: relative;
+    position: absolute;
     background: yellow;
     width: 12px;
     height: 12px;
     z-index: 100;
+    border-radius: 50%;
 }
 
 .description {
-    position: relative;
+    position: absolute;
+    margin: 0;
 }
 
 #background-for-tips {
@@ -36,10 +38,26 @@
 
 #image-with-tips-position {
     position: absolute;
-    width: 300px;
+    width: 100%;
 }
 
 .highlight-tip {
     color: red;
     box-shadow: 2px 2px black;
+}
+
+.main-info {
+    position: relative;
+    z-index: 101;
+
+    top: 225px;
+    left: 120px;
+}
+
+#image-with-tips-order {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 171px;
+    gap: 5px;
 }
