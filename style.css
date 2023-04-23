@@ -19,6 +19,7 @@
 .description {
     position: absolute;
     margin: 0;
+    width: max-content;
 }
 
 #background-for-tips {
